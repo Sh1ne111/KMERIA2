@@ -206,7 +206,7 @@ using external software such as *PLINK* or *GEMMA* program.
 
 ```
 plink --vcf sampling.geno --make-bed --out sampling.geno
-gemma-0.98.5 -bfile sampling.geno -gk -p phenotype.tsv -o kinship
+gemma -bfile sampling.geno -gk -p phenotype.tsv -o kinship
 
 ```
 
