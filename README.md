@@ -321,6 +321,23 @@ minimap2 -x sr -t 32 Ss09_hap1.fa TN_assoc_R1.fastq TN_assoc_R2.fastq -o TN_aln.
 
  ```
 
+## Miscellaneous
+
+ ```
+# Get the k-mer dosage from the filtered k-mer counting matrices.
+
+/bin/retrieve -h
+
+# Calculate the GWAS significant threshold.
+
+/scripts/calc_gwas_threshold.R
+
+# Manhattan Plot
+/scripts/plot_manhattan.R
+
+ ```
+
+
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
@@ -335,4 +352,4 @@ If you have used KMERIA in your research, please cite below:
 
 > https://github.com/Sh1ne111/KMERIA 
   
-- Shuai Chen, et al., A novel k-mer-based GWAS approach empowering gene mining in polyploids. (paper preparation)
+- Chen Shuai, et al., A novel k-mer-based GWAS approach empowering gene mining in polyploids. (paper preparation)
