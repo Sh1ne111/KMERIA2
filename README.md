@@ -184,7 +184,7 @@ kmeria flt -i <input_dir>(the directory of previous output) -o <output_dir> \
            -t 8 -c 1000 -s 0.8 -p 6 -d <sample_depth>
 ```
 
-#### （4）Convert k-mer count matrices to BIMBAM dosage format
+#### (4) Convert k-mer count matrices to BIMBAM dosage format
 
 ```
 kmeria m2b --in input_dir --out output_dir --threads 8
