@@ -133,22 +133,25 @@ kmeria dump sampleN_k31.kc -c 5 -C 1000 -o sampleN_k31.kc.tsv
 pigz -p 4 sample1_k31.kmc.tsv
 ...
 pigz -p 4 sampleN_k31.kmc.tsv
+```
+
 
 - We also support the k-mer counting file using KMC (https://github.com/refresh-bio/KMC)
 
+```
 ls sampleN_*.fastq.gz > sampleN_input.txt
 kmc -k31 -t4 -m32 -ci5 -cx1000 @sampleN_input.path sampleN_k31 . 
 
 kmc_tools transform sampleN_k31 dump -s sampleN_k31.kc.tsv
-```
 
 To accelerate the subsequent construction of the k-mer matrix and save storage space, we recommend to compress the generated k-mer count files.
-```
+
 pigz -p 4 sample1_k31.kmc.tsv
 ...
 pigz -p 4 sampleN_k31.kmc.tsv
 
 ```
+
 #### (2) Create the k-mers count matrices at the population level.
 
 ```
