@@ -182,6 +182,17 @@ After creating the k-mers count, there is no longer a need for separate k-mers c
 ```
 kmeria flt -i <input_dir>(the directory of previous output) -o <output_dir> \
            -t 8 -c 1000 -s 0.8 -p 6 -d <sample_depth>
+
+Usage:
+kmeria flt    -h          Print usage. \
+              -i  STR     Directory of k-mer abudance matrices. <input_dir> \ 
+              -o  STR     Output directory. <output_dir> \
+              -t  INT     Number of threads. <num_threads> \
+              -c  INT     Max abundance of k-mer. <max_cov,1000> \
+              -s  FLOAT   Missing ratio. <missing_ratio,0.8> \
+              -p  INT     Genome ploidy.  <ploidy,4> \
+              -d  STR     Sample depth list. <sample_id\\tsequence depth>
+
 ```
 
 #### (4) Convert k-mer count matrices to BIMBAM dosage format
