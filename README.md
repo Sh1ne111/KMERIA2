@@ -53,6 +53,33 @@
 ```
 
 ## Usage
+#### kmeria pipeline (fast mode)
+
+kmeria_wrapper.pl is a wrapper script for generating job scripts for the KMERIA pipeline,
+with support for various job schedulers (SLURM, SGE, PBS). These scripts need to be manually
+submitted to the cluster system. Instructions for usage are provided in the [wiki](https://github.com/Sh1ne111/KMERIA/wiki).
+
+  ```bash
+perl /path/to/kmeria_wrapper.pl --step all \
+  --input /path/to/fastq_files \
+  --output /path/to/kmeria_results \ 
+  --samples sample.list \
+  --threads 32 \
+  --memory 32G \
+  --kmer 31 \
+  --min-abund 5 \
+  --max-abund 1000 \
+  --batch_size 2 \
+  --use-kmc \
+  --use-kctm2 \      # optional
+  --kmc-memory 32 \  #  optional
+  --ploidy 4 \
+  --depth-file /path/to/sample_depths.txt \
+  --pheno /path/to/phenotypes.txt \
+  --pheno-col 1 \
+  --scheduler slurm \
+  --queue hebhcnormal01
+   ```
 
 #### 1. kmeria overview
 
