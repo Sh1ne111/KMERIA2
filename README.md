@@ -61,7 +61,7 @@ submitted to the cluster system.
 Instructions for usage are provided in the [Wiki](https://github.com/Sh1ne111/KMERIA/wiki).
 
   ```bash
-perl /path/to/kmeria_wrapper.pl --step all \
+perl /KMERIA/scripts/kmeria_wrapper.pl --step all \
   --input /path/to/fastq_files \
   --output /path/to/kmeria_results \ 
   --samples sample.list \
