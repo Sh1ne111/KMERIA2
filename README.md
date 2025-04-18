@@ -53,11 +53,12 @@
 ```
 
 ## Usage
-#### kmeria pipeline (fast mode)
+#### kmeria pipeline (easy mode)
 
 kmeria_wrapper.pl is a wrapper script for generating job scripts for the KMERIA pipeline,
 with support for various job schedulers (SLURM, SGE, PBS). These scripts need to be manually
-submitted to the cluster system. Instructions for usage are provided in the [wiki](https://github.com/Sh1ne111/KMERIA/wiki).
+submitted to the cluster system. 
+Instructions for usage are provided in the [wiki](https://github.com/Sh1ne111/KMERIA/wiki).
 
   ```bash
 perl /path/to/kmeria_wrapper.pl --step all \
