@@ -376,11 +376,6 @@ minimap2 -x sr -t 32 Ss09_hap1.fa TN_assoc_R1.fastq TN_assoc_R2.fastq -o TN_aln.
 
  ```
 
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-
 ## Contact
 For questions or feedback, please contact [Chen Shuai] at [chensss1209@gmail.com].
 
